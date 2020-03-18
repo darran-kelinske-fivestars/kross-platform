@@ -1,4 +1,5 @@
-import com.fivestars.krossplatform.KEY_CAPTURE_PORT
+package com.fivestars.krossplatform
+
 import org.w3c.dom.MessageChannel
 import org.w3c.dom.MessageEvent
 import kotlin.browser.window

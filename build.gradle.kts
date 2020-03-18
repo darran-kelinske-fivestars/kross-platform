@@ -24,7 +24,11 @@ repositories {
 kotlin {
     android()
     js {
-        browser { }
+        browser {
+            dceTask {
+                keep("krossplatform.com.fivestars.krossplatform.KrossPlatformJs")
+            }
+        }
     }
 
     sourceSets {
@@ -62,6 +66,13 @@ android {
     defaultConfig {
         minSdkVersion(21)
         targetSdkVersion(29)
+    }
+    sourceSets {
+        getByName("main") {
+            manifest.srcFile("src/androidMain/AndroidManifest.xml")
+            java.srcDirs(file("src/androidMain/kotlin"))
+            res.srcDirs(file("src/androidMain/res"))
+        }
     }
 }
 

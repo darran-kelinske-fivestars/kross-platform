@@ -1,11 +1,10 @@
-package com.fivestars.cordovaalternativepattern.com.fivestars.krossplatform
+package com.fivestars.krossplatform
 
 import android.net.Uri
 import android.webkit.WebView
 import androidx.webkit.WebMessageCompat
 import androidx.webkit.WebMessagePortCompat
 import androidx.webkit.WebViewCompat
-import com.fivestars.krossplatform.KEY_CAPTURE_PORT
 
 
 class JavascriptMessageHandler(webView: WebView) {
