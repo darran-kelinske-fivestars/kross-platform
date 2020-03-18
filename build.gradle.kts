@@ -1,7 +1,7 @@
 buildscript {
     repositories {
-        jcenter()
         google()
+        jcenter()
         mavenCentral()
     }
     dependencies {
@@ -12,16 +12,7 @@ buildscript {
 
 plugins {
     kotlin("multiplatform") version "1.3.70"
-}
-
-apply(plugin = "com.android.library")
-
-android {
-    compileSdkVersion(29)
-    defaultConfig {
-        minSdkVersion(21)
-        targetSdkVersion(29)
-    }
+    id("com.android.library") version "3.5.3"
 }
 
 repositories {
@@ -65,3 +56,12 @@ kotlin {
         }
     }
 }
+
+android {
+    compileSdkVersion(29)
+    defaultConfig {
+        minSdkVersion(21)
+        targetSdkVersion(29)
+    }
+}
+

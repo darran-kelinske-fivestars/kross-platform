@@ -1,8 +1,5 @@
 package com.fivestars.krossplatform.model.message
 
-import kotlinx.serialization.Serializable
-
-@Serializable
 data class JavascriptMessage(
     val action: String,
     val successCallback: String?,
