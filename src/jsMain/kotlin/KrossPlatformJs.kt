@@ -7,8 +7,8 @@ import kotlin.browser.window
 object KrossPlatformJs {
 
     private val channel = MessageChannel()
-    private var inputPort = channel.port1
-    private var outputPort = channel.port2
+    var inputPort = channel.port1
+    var outputPort = channel.port2
 
     @JsName("configureChannel")
     fun configureChannel() {
